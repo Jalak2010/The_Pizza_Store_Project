@@ -1,0 +1,226 @@
+=>REAL TIME PIZZA PROJECT IN YOUTUBE:-
+
+=>it is a full stack project.
+
+=>Front end mate :- html, sass, ejs
+
+=>Back end mate  :- node, express, mongodb
+
+=>aa project ma real time traker banavva mate WEB SOCKET no use thase.
+
+=>Aa application banavva mate MVC patten use thay. [Model View Controller]
+
+------------------------------------------------------------------------------------------------------------------------
+
+=>Folder Structure of project:-
+
+->npm init
+
+->public folder ma css, js ,img store thase.
+
+->app folder ma badhu backend nu work store thase.
+
+->app folder ni andar http name nu folder banavvu. http folder ma request na related jetli file hoy e store thase. example:- controller, middleware etc.
+
+->app folder ni andar http folder ni andar 1>controllers 2>middlewares name na 2 folder banavva.
+
+->app folder ni andar config and models and http name na folder banava.
+
+->resources folder banavvu. ama js[app.js] and scss[app.scss] and views[all html code] folder banavi ne file banavi.
+
+->routes name nu folder banavvu. ama web.js name ni file banavvi. and api.js name ni file banavvi.
+
+------------------------------------------------------------------------------------------------------------------------
+
+=>npm package install:-
+
+->npm i ejs
+->npm i express
+->npm i express-ejs-layouts
+
+->create dev dependency:-
+  ->npm i nodemon -D                                  //local projects banavta hoy tyare dev dependency use thay.
+  
+-------------------------------------------------------------------------------------------------------------------------
+
+=>Create Express Server:-
+
+->root folder ma j server.js name ni file banavvi.
+
+->server.js ma express server create karavvu.
+
+--------------------------------------------------------------------------------------------------------------------------
+
+=>Git Setup and First Commit:-
+
+-> Team work ma kam karta hoy tyare a use thay. aapde use karvanu nathi...
+
+-------------------------------------------------------------------------------------------------------------------------
+
+=>Install Laravel Mix :-
+  
+->Laravel Mix Laravel framework ni andar kam kare.  
+
+->Laravel website par thi install karvu.
+
+->mix.js('resources/js/app.js', 'public/js/app.js').sass('resources/scss/app.scss', 'public/css/app.css');
+
+->resources folder ni andar na js,scss folder na path ne public folder ni andar js,css folder sathe connect karavva.
+
+->file compile thay shake  a mate laravel ni thodi script package.json file ma mukvi.
+
+->cross env package ne install karvu.
+
+->terminal ma npm run watch lakhvu.  npm run watch jaruri file ne install kari ne larevel software ne run karavse.
+
+
+-----------------------------------------------------------------------------------------------------------------------------
+
+=>Install tailwind css:-
+
+->tailwind css ni website par thi npm install tailwindcss thi pn install thay shake and cdn link par thi pn thay shake...aa project ma cdn link thi install thase.
+
+->CDN link ne coply kari ne resources folder ni andar views folder ma home.ejs ma paste karvu.
+
+->home.ejs ma /css/app.css and /js/app.js ni link aapvi.
+
+->google font LATO ni link mukvi.
+
+->server.js ma app.use(express.static('public')) path aapvo.
+
+--------------------------------------------------------------------------------------------------------------------------------
+
+=>Designing Home page:-
+
+-> resources ni andar scss ma _variable.scss name ni file banavvi. ama badha color mate na variable ne difine karva.
+->app.scss ma _variable.scss ni file include karavvi.
+->@import './_variable';
+
+--------------------------------------------------------------------------------------------------------------------------
+
+=> Add-to-cart page...:-
+
+->Add-to-cart page customer side hoy atle views folder ni andar customers name nu folder banavvu. Ama cart.ejs name ni file banavvi.
+
+
+
+
+
+
+---------------------------------------------------------------------------------------------------------------------------
+
+=> Use Of express-ejs-layouts:-
+
+->file ma je coding same to same repeat thatu hoy ani mate express-ejs-layouts no use kari ne alag file ma repeated coding mukvu.
+
+->views ma layout.ejs ni file banavvi. ama reapted coding mukvu.[navbar nu coding]. pachi <%- body %> lakhvu. atle baki nu work karse.
+
+->home and baki ni file ma direct main codng j karvu.
+
+-----------------------------------------------------------------------------------------------------------------------------
+
+
+=>Login and registartion page:-
+
+->views folder ni andar auth name nu folder banavvu. ama login.ejs and register.ejs name ni file banavvi.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+=>Routes the files:-
+
+-> server.js file ma bov badha route use thase atle a badha routes ne alag file ma save karva mate Routes no use thay.
+
+->root directory ma routes name nu folder banavvu. Ama api.js and web.js name ni file banavvi.
+
+->projects ma jetla routes use thay a badha web.js ma store thase.
+
+->web.js ma function banavvu, ama routes no code karvo. pachi a function ne exports karavvu, server.js ni file ma required karavvu.
+
+------------------------------------------------------------------------------------------------------------------------
+
+=>controlleres:-
+
+->file ma content vadhu hoy ane alag file ma store karva mate controlleres use thay.
+
+->aa project ma routes ni file ne controller ni file sathe connect karavse.
+
+-> FOR HOME PAGE:- app folder ni andar http folder ni andar controllers folder ma homeControllers.js name ni file banavvi.
+
+-> FOR HOME PAGE:-homeControllers.js file ma function no use karvo, A function ni andar factory function no use karvo. [je function object return kare ane factory function kevay.]. pachi ane exports karavvu, pachi web.js ma require karavvu.
+
+->home page ni jen login, register, cart page nu controller sathe connection karavvu.
+
+=>aavi rite routes file nu controller sathe connect karavvu.
+
+-------------------------------------------------------------------------------------------------------------------------
+
+=> Menu page data fetch using database and Create Database:-
+
+-> aa project ma mongodb compass mathi pela ak database and collection banave che. and ani pase already json data vali file che ane a compass ma fetch karave che.
+
+-> pachiserver.js file ma database connection kare che, and home page ma menu che ama data che e database mathi fetch karave che.
+
+->databse name- pizza , collection name - menus
+
+->homecontroller.js file ma home page ma menu ana data database mathi aave ano code karvo, and home.ejs file ma a data ne dynamic karva mate no code karvo.
+
+
+
+--------------------------------------------------------------------------------------------------------------------------
+
+=>create model:-
+
+->app folder ma model folder ma menu.js name ni file banavvi, ama schema and model nu coding karvu. a file ne exports kari ne homeControllers.js file ma require karavvi.
+
+--------------------------------------------------------------------------------------------------------------------------
+
+=>session:-
+
+->aa project ma cart ne session ma store karse. ama mate npm i express-session name na package ne insatll karvu, server.js ma require karavvu.
+
+->session cookie vagar kam na kare.
+
+->secret key mate .env package insatll karvu, server.js ma starting ma j require('dotenv').config() karvu.
+
+->server.js ma session  nu configuration karvu.
+
+->basically, aapde server ne request moklivi ana badla ma server aapnne response aape. aa time a sessionId and secretKey generate thay, and a unique hoy.
+
+->Jyare cookie na data delete thay tyare session delete thase.
+
+->aa project ma session ne database ma store karva ma aavse, ama mate npm i connect-mongo install karvu, ane require karavvu. 
+ e.g:-  const MongoDbStore = require('connect-mongo')(session);                      //session no use karvo,and a function return kare atle (session) lakhvu.
+ 
+ ->server.js ma session mate nu setup karvu.
+ 
+ ->jyare browser ma thi session delete thay tyare database ma pn a delete thay jashe.
+ 
+ -------------------------------------------------------------------------------------------------------------------------
+ 
+ =>session ni andar aapdu add-to-cart kevi rite add karvu.?
+ 
+ ->home.ejs ma Add nu btn che ana par EventLister method karvi.
+ 
+ ->resources ni andar app.js ma Add-to-cart valu code karvu.
+ 
+ 
+ ->server ne request mokalva mate, ajax no use karva mate npm i axios package ne insatll karvu.
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

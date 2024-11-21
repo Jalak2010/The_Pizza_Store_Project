@@ -1,0 +1,182 @@
+[
+    {
+    "_id" : {
+    "$oid" : "5eee6717a27a66807cf2bea9"
+    },
+    "name" : "Cheesy-7 Pizza",
+    "category":"pizza",
+    "content": "An Exotic Combination Of White Mozarella, White Cheese, Cream And Orange Cheddar Cheese",
+    "image" : "7_Cheese_Pizza.svg",
+    "price" : "500",
+    "size" : "medium"
+   },
+   {
+    "_id" : {
+    "$oid" : "641bdb828e75b4f4546931b1"
+    },
+    "name" : "Burn To Hell Pizza",
+    "category":"pizza",
+    "content": "A Fiery And Lethal Combination Of Hot & Garlic Dip,Jalapenos, Mushrooms, Olives And Capsicum.",
+    "image" : "Bismarck.svg",
+    "price" : "300",
+    "size" : "large"
+   },
+   {
+    "_id" : {
+    "$oid" : "641bdc358e75b4f4546931b2"
+    },
+    "name" : "Veggie Pizza",
+    "category":"pizza",
+    "content": "A Perfect Blend Of Cheesey Macroni,Tossed Mushrooms,Swirl Of Jalapenos Dip & Cheese.",
+    "image" : "Mashroom.svg",
+    "price" : "400",
+    "size" : "small"
+   },
+   {
+    "_id" : {
+    "$oid" : "641bdd5b8e75b4f4546931b3"
+    },
+    "name" : "Garden Delight Pizza",
+    "category":"pizza",
+    "content": "A Classic Veg Pizza That Combines The Zing And Freshness Of Onions, Tomatoes And Capsicum.",
+    "image" : "Paper_Veg.svg",
+    "price" : "500",
+    "size" : "large"
+   },
+   {
+    "_id" : {
+    "$oid" : "641bdfe98e75b4f4546931b5"
+    },
+    "name" : "Crispy Veg Burger",
+    "category":"burger",
+    "content": "It Is Tropped With Cheddar Cheese, Three Types Of Mayo Cheeses, Caramelized Onions",
+    "image" : "Crispy_Veg_Burger.svg",
+    "price" : "200",
+    "size" : "medium"
+   },
+   {
+    "_id" : {
+    "$oid" : "641be00f8e75b4f4546931b6"
+    },
+    "name" : "Mexican Burger",
+    "category":"burger",
+    "content": "With Freshly Roasted Anaheim Green Chilies, Cheddar And Jack Cheeses And Chipotle Mayo.",
+    "image" : "Mexican_Burger.svg",
+    "price" : "250",
+    "size" : "medium"
+   },
+   {
+    "_id" : {
+    "$oid" : "641be1ae8e75b4f4546931b7"
+    },
+    "name" : "Tandoori Burger",
+    "category":"burger",
+    "content": "Uncured Bacon, Tomato, Cheddar Cheese And Homemade Guacamole With Our Blend Of Spices.",
+    "image" : "Tandoor_Grill_Burger.svg",
+    "price" : "220",
+    "size" : "medium"
+   },
+   {
+    "_id" : {
+    "$oid" : "641be1e58e75b4f4546931b8"
+    },
+    "name" : "SHEZWAN BURGER",
+    "category":"burger",
+    "content": "Fresh Ground Beef, Red Chilli, Melted Cheddar, Melted Swiss Cheese, Spicy Black Beans With Mayo",
+    "image" : "Veg_Cheese_Burger.svg",
+    "price" : "150",
+    "size" : "medium"
+   },
+
+
+   {
+    "_id" : {
+    "$oid" : "641c2a0ca97b07dba6914fd5"
+    },
+    "name" : "Cock",
+    "category":"drink",
+    "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.",
+    "image" : "fruit.jpg",
+    "price" : "100",
+    "size" : "medium"
+   },
+   {
+    "_id" : {
+    "$oid" : "641c2a7da97b07dba6914fd6"
+    },
+    "name" : "Pineapple Drink",
+    "category":"drink",
+    "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.",
+    "image" : "p8.webp",
+    "price" : "200",
+    "size" : "medium"
+   },
+   {
+    "_id" : {
+    "$oid" : "641c2a8ca97b07dba6914fd7"
+    },
+    "name" : "Fresh_Lime Drink",
+    "category":"drink",
+    "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.",
+    "image" : "p12.jpg",
+    "price" : "150",
+    "size" : "medium"
+   },
+   {
+    "_id" : {
+    "$oid" : "641c2a9aa97b07dba6914fd8"
+    },
+    "name" : "Energy Drink",
+    "category":"drink",
+    "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.",
+    "image" : "red.jpg",
+    "price" : "120",
+    "size" : "medium"
+   },
+
+
+   {
+    "_id" : {
+    "$oid" : "641c2aeba97b07dba6914fd9"
+    },
+    "name" : "CupCake",
+    "category":"desert",
+    "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.",
+    "image" : "cup.jpg",
+    "price" : "350",
+    "size" : "medium"
+   },
+   {
+    "_id" : {
+    "$oid" : "641c2afba97b07dba6914fda"
+    },
+    "name" : "cheesecake",
+    "category":"desert",
+    "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.",
+    "image" : "p6.jpg",
+    "price" : "400",
+    "size" : "medium"
+   },
+   {
+    "_id" : {
+    "$oid" : "641c2b09a97b07dba6914fdb"
+    },
+    "name" : "Donut",
+    "category":"desert",
+    "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.",
+    "image" : "p8.jpg",
+    "price" : "350",
+    "size" : "medium"
+   },
+   {
+    "_id" : {
+    "$oid" : "641c2b21a97b07dba6914fdc"
+    },
+    "name" : "pancake",
+    "category":"desert",
+    "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.",
+    "image" : "p5.jpg",
+    "price" : "120",
+    "size" : "medium"
+   }
+]

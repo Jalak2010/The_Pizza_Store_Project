@@ -1,0 +1,271 @@
+<!-- Menu BG Image Start ------------------------------------------------------------------------->
+<div class="container-fluid About_Menu mt-2">
+  <div class="Main_Menu_Image">
+    <div class="Detail_Menu">
+      <div class="container">
+        <h2>welcome to our restaurant</h2>
+        <p>fast, delicious meal to reach your optimum health and fitness. <br> We provide ourselves on making real food
+          from the best ingredients.
+        </p>
+        <h6>don't starve, just order.</h6>
+        <button class="btn2 btn-lg"> <a href="#desert"> order now </a></button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Menu BG Image Ends ------------------------------------------------------------------------->
+
+
+
+<!-- Pizza Menu Starts -->
+<div class="container Main_Pizza_Menu">
+  <h2>---- Pizza Menu ----</h2>
+  <div class="row gy-4 Details_menu">
+
+    <% pizzas.forEach(function(pizza) { if(pizza.category=='pizza' ){ %>
+
+
+
+      <div class="col-lg-3 col-md-6 col-sm-12">
+        <div class="card">
+          <img class="card-img-top" src="./img/Pizza/<%= pizza.image %>" alt="Card image cap">
+          <div class="card-body">
+            <h5 class="card-title">
+              <%= pizza.name %>
+            </h5>
+            <p class="card-text">
+              <%= pizza.content %>
+            </p>
+            <p class="text-center fw-bold">
+              <%= pizza.size %>
+            </p>
+            <div class="d-flex mb-3">
+              <button class="btn"> ₹ <%= pizza.price %> </button>
+              
+              <button data-pizza="<%= JSON.stringify(pizza) %>" class="add-to-cart cart ms-4 btn"> <span><i
+                      class="fas fa-plus me-1"></i></span>Add to Cart </button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+      <% } }) %>
+
+  </div>
+</div>
+
+<!-- Pizza Menu Ends -->
+
+
+
+<!-- Burger Menu starts -->
+
+<div class="container Main_Pizza_Menu">
+  <h2>---- Burger Menu ----</h2>
+  <div class="row gy-4 Details_menu">
+
+    <% pizzas.forEach(function(pizza) { if(pizza.category=='burger' ){ %>
+      <div class="col-lg-3 col-md-6 col-sm-12">
+        <div class="card">
+          <div class="img_burger">
+            <img class="card-img-top" src="./img/Pizza/<%= pizza.image %>" alt="Card image cap">
+          </div>
+          <div class="card-body">
+            <h5 class="card-title">
+              <%= pizza.name %>
+            </h5>
+            <p class="card-text">
+              <%= pizza.content %>
+            </p>
+            <div class="d-flex mb-3">
+              <button class="btn"> ₹ <%= pizza.price %> </button>
+              
+              <button data-pizza="<%= JSON.stringify(pizza) %>" class="add-to-cart cart ms-4 btn"> <span><i
+                      class="fas fa-plus me-1"></i></span>Add to Cart </button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+      <% } }) %>
+  </div>
+</div>
+
+<!-- burger menu ends -->
+
+
+<!-- Desert menu starts -->
+
+<div class="container Main_Pizza_Menu">
+  <h2>---- Drinks ----</h2>
+  <div class="row gy-4 Details_menu">
+
+    <% pizzas.forEach(function(pizza) { if(pizza.category=='drink' ){ %>
+
+      <div class="col-lg-3 col-md-6 col-sm-12">
+        <div class="card">
+          <div class="img_drink">
+            <img class="card-img-top" src="./img/Pizza/<%= pizza.image %>" alt="Card image cap">
+          </div>
+          <div class="card-body">
+            <h5 class="card-title"><%= pizza.name %></h5>
+            <p class="card-text"> <%= pizza.content %></p>
+            <div class="d-flex mb-3">
+              <button class="btn"> ₹ <%= pizza.price %> </button>
+              
+              <button data-pizza="<%= JSON.stringify(pizza) %>" class="add-to-cart cart ms-4 btn"> <span><i
+                      class="fas fa-plus me-1"></i></span>Add to Cart </button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <% } }) %>
+  </div>
+</div>
+
+<!-- Drinks menu ends -->
+
+
+
+<!-- desert -->
+
+ <div class="container Main_Pizza_Menu">
+    <h2>---- Deserts ----</h2>
+    <div class="row gy-4 Details_menu" id="desert">
+
+      <% pizzas.forEach(function(pizza) { if(pizza.category=='desert' ){ %>
+
+      <div class="col-lg-3 col-md-6 col-sm-12">
+        <div class="card">
+          <div class="img_desert">
+            <img class="card-img-top" src="./img/Pizza/<%= pizza.image %>" alt="Card image cap">
+          </div>
+          <div class="card-body">
+            <h5 class="card-title"><%= pizza.name %></h5>
+            <p class="card-text"><%= pizza.content %></p>
+            <div class="d-flex mb-3">
+              <button class="btn"> ₹ <%= pizza.price %> </button>
+              
+              <button data-pizza="<%= JSON.stringify(pizza) %>" class="add-to-cart cart ms-4 btn"> <span><i
+                      class="fas fa-plus me-1"></i></span>Add to Cart </button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <% } }) %>
+  </div>
+  </div> 
+
+
+
+
+
+<!-- footer -->
+<div class="container-fluid Footer_main">
+  <div class="container Footer_about">
+    <div class="row">
+
+      <div class="col-lg-3 col-md-6 col-sm-12 p-3">
+        <h5>ABOUT US</h5>
+        <p class="pt-4">
+          Far far away, behind the word
+          mountains, far from the
+          countries Vokalia and
+          Consonantia, there live the
+          blind texts.
+        </p>
+
+        <div class="About_icon pt-3">
+          <div class="d-flex">
+
+            <i class="fab fa-twitter logo p-3 "></i>
+
+            <i class="fab fa-facebook-f logo p-3 ms-3"></i>
+
+            <i class="fab fa-instagram logo p-3 ms-3"></i>
+
+          </div>
+        </div>
+      </div>
+
+      <div class="col-lg-4 col-md-6 col-sm-12 p-3">
+        <h5 class="ps-2">RECENT BLOG</h5>
+        <div class="d-flex pt-4">
+          <div class="Image_1">
+            <img src="./img/footer/p1.jpg" alt="image" class="img-fluid">
+          </div>
+          <div class="content ps-2">
+            <h6>Even the all-powerful Pointing </h6>
+            <p class="pt-1"><span><i class="far fa-calendar-alt"></i></span> Sept 15, 2018 <span class="ps-3"><i
+                  class="fas fa-user-plus"></i> </span> Admin <span class="ps-3"><i class="far fa-envelope "></i>
+              </span> 19</p>
+          </div>
+        </div>
+
+        <div class="d-flex pt-4">
+          <div class="Image_2">
+            <img src="./img/footer/p4.jpg" alt="image" class="img-fluid">
+          </div>
+          <div class="content ps-2">
+            <h6>Even the all-powerful Pointing </h6>
+            <p class="pt-2"><span><i class="far fa-calendar-alt"></i></span> Sept 15, 2018 <span class="ps-3"><i
+                  class="fas fa-user-plus"></i> </span> Admin <span class="ps-3"><i class="far fa-envelope"></i>
+              </span> 19</p>
+          </div>
+
+        </div>
+      </div>
+
+      <div class="col-lg-2 col-md-6 col-sm-12 About_Services p-3">
+        <h5 class="ps-3">SERVICES</h5>
+
+        <div class="links pt-4">
+          <ul>
+            <li><a href="home"> Home </a></li>
+            <li><a href="about"> About us</a></li>
+            <li><a href="blog"> Services</a></li>
+            <li><a href="blog"> Terms of service</a></li>
+            <li><a href="about"> Privacy policy</a></li>
+            <li><a href="contact"> Feedback</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="col-lg-3 col-md-6 col-sm-12 About_Questions  p-3">
+        <h5>HAVE A QUESTIONS?</h5>
+
+        <div class="d-flex pt-4">
+          <i class="fi fi-rr-marker icon fs-3"></i>
+          <p class="ps-3">203 Fake St. Mountain View,
+            San Francisco, California,
+            USA </p>
+        </div>
+
+        <div class="d-flex pt-3">
+
+          <i class="fas fa-phone-alt icon fs-3"></i>
+          <p class="ps-3">+2392 3929 210</p>
+        </div>
+
+        <div class="d-flex pt-4">
+          <i class="far fa-envelope icon fs-3"></i>
+          <p class="ps-3">info@yourdomain.com</p>
+        </div>
+
+
+
+      </div>
+
+    </div>
+  </div>
+
+  <!-- One line for footer -->
+  <footer class="footer pt-5">
+    <p>Copyright ©2023 THE PIZZA STORE All rights reserved </p>
+    </footer>
+</div>
